@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# todolist
+This example todolist with ROR
+>>>>>>> d7e05d03d95937ff9eab88f0ecda4540bf7cad14
