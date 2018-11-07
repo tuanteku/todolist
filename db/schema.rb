@@ -10,17 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_05_021148) do
+ActiveRecord::Schema.define(version: 2018_11_06_063314) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "resumes", force: :cascade do |t|
+    t.string "name"
+    t.string "attachment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "todo_items", force: :cascade do |t|
     t.string "content"
     t.bigint "todo_list_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.datetime "complated_at"
+    t.datetime "completed_at"
     t.index ["todo_list_id"], name: "index_todo_items_on_todo_list_id"
   end
 

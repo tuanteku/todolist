@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :resumes, only: [:index, :new, :create, :destroy]
   resources :todo_lists do
     resources :todo_items do
       member do
